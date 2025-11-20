@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas Cines</title>
+    <meta name="Descripción" content="Mi página web">
+    <meta name="Author" content="Richy Arranz">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <header class="contenido">
+        <div id="modos">
+
+            <button><span onclick="Modo(this)" class="material-symbols-outlined boton-oscuro" id="Cambio-modo">
+                    toggle_on
+                </span></button>
+        </div>
+    </header>
+    <main>
+        <h1>Reserve su butaca</h1>
+        <div id="selector">
+            <label for="Pelis">Seleccione la película: </label>
+            <select name="opcionespelis" id="Pelis" onchange="PrecioButacas()">
+                <option class="opcion" value="15">Gladiator (15 €)</option>
+                <option class="opcion" value="8">Toy Story (8 €)</option>
+                <option class="opcion" value="12">Un ciudadano ejemplar (12 €)</option>
+                <option class="opcion" value="10">Joker (10 €)</option>
+            </select>
+        </div>
+        <div class="texto">
+            <p >Has seleccionado <span class="asiento">0</span> butacas</p>
+            <p>Su precio total es de <span class="dineros">0€</span></p>
+            <br>
+            <button type="submit" id="boton">Ir a Pagar</button>
+        </div>
+
+        <div class="contenido" id="butacas">
+      
+            <table>
+                <tr>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="escalera"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="escalera"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+
+                </tr>
+                <tr>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="escalera"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="escalera"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+
+                </tr>
+                <tr>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="escalera"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="escalera"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="escalera"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="butaca " onclick="SelButaca(this)"></td>
+                    <td class="escalera"></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+
+
+            </table>
+
+            <div class="contenido dos">
+
+                <p id="pantalla"> Pantalla </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- <p class="textos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, officiis.</p> -->
+
+    </main>
+    <footer class="contenido">
+        <p class="textos"> Todos los derechos reservados por &copy; Richy Arranz </p>
+    </footer>
+    <script src="./jss/script.js"></script>
+</body>
+
+</html>
