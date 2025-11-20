@@ -1,5 +1,6 @@
 {
   "version": 2,
-  "public": ".",
+  "rootDirectory": "Proyecto 15",
+  "public": "Proyecto 15",
   "cleanUrls": true
 }
